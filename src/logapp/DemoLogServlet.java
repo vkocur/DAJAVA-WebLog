@@ -33,7 +33,8 @@ public class DemoLogServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		log.info("Test log message");
+		log.error("Test log message");
+		log.info("Test log message");		
 		log.warn("Test log message");
 		log.fatal("Test log message");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
