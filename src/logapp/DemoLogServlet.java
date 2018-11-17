@@ -35,6 +35,7 @@ public class DemoLogServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		log.info("Test log message");
 		log.warn("Test log message");
+		log.fatal("Test log message");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
