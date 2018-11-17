@@ -34,6 +34,7 @@ public class DemoLogServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		log.info("Test log message");
+		log.warn("Test log message");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
